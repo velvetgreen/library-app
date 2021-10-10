@@ -13,7 +13,7 @@ export const Book: React.FC = () => {
   const error = useSelector((state: IAppState) => state.book.error);
   const authors = useSelector((state: IAppState) => state.book.data?.volumeInfo?.authors?.join(', '));
   const { id } = useParams<{id: string}>();
-  const imageLink = useMemo(() => book?.imageLinks?.small.replace('http', 'https'), [book?.imageLinks?.small]);
+  const imageLink = useMemo(() => book?.imageLinks?.small?.replace('http', 'https'), [book?.imageLinks?.small]);
 
   useEffect(() => {
     dispatch(fetchBook(id));
