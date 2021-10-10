@@ -1,0 +1,66 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+}
+
+.input {
+  width: 400px;
+  outline: none;
+  border: none;
+  height: 40px;
+  padding: 5px;
+  margin: 0;
+  font-size: 16px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.button {
+  height: 50px;
+  width: 40px;
+  outline: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+  color: grey;
+}
+
+.settings {
+  margin-top: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.select {
+  height: 40px;
+  width: 150px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: grey;
+  border-radius: 5px;
+}
+
+@media (max-width:667px) {
+  .input {
+    width: auto;
+    height: 20px;
+  }
+  .button {
+    height: 30px;
+  }
+  .select {
+    width: auto;
+    height: 30px;
+  }
+  .settings {
+    width: 200px;
+  }
+}

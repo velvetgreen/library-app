@@ -1,0 +1,60 @@
+.root {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.totalItems {
+  height: 40px;
+  color: rgb(49, 45, 45);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.loadMore {
+  font-size: 14px;
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  margin: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.loadMore i {
+  margin-left: 5px;
+}
+
+.loadMore:hover {
+  opacity: .8;
+}
+
+@media (max-width:667px) {
+  .cards {
+  grid-template-columns: 300px;
+  }
+}
+
+.hello, .nothingFound {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}

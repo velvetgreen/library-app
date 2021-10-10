@@ -1,0 +1,9 @@
+.root {
+  background-image: url('../../images/canva-literary-book-pages-background.jpeg');
+  height: 300px;
+  width: auto;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

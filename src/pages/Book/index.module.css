@@ -1,0 +1,95 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  height: auto;
+  width: 900px;
+  margin: 30px;
+}
+
+.bookInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bookImage, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(201, 195, 195, 0.3);
+  margin: 0 20px 20px 0px;
+  border-radius: 5px;
+  max-height: 380px;
+  max-width: 260px;
+  flex-shrink: 0;
+}
+
+.bookImage img {
+  height: 370px;
+  width: 260px;
+}
+
+.authors {
+  font-size: 14px;
+  color: grey;
+  font-weight: 200;
+  margin: 0 2px 0 0;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  font-size: 12px;
+  color: grey;
+  font-weight: 300;
+  margin: 0;
+}
+
+.authorsBlock {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton {
+  color: grey;
+  text-decoration: underline;
+}
+
+.description {
+  width: 100%;
+}
+
+@media (max-width: 667px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .bookImage img {
+    height: 300px;
+    width: 200px;
+  }
+}
